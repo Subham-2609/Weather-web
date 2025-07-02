@@ -1,0 +1,171 @@
+body {
+    /*background-color: rgb(227,232,228);   white mode */
+     background-color: black;    /*dark mode*/
+}
+
+.col{
+    backdrop-filter : blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border : 1px solid rgba(255,255,255,0.18);   needs to be add in white mode*/
+    transition: transform 0.5s ease, opacity 0.5s ease , box-shadow 0.3s ease;
+    transform : translateY(20px);
+}
+
+.col:hover{
+    transform : scale(1.03) translateY(0);
+    box-shadow: 0 50px 40px rgba(31, 38, 135, 0.5);
+    cursor: pointer;
+}
+
+.div2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100px;
+    margin-right: 540px;
+}
+
+ .container123{
+    margin-top: 200px;
+ }
+
+#naavv{
+   /* background-color: rgb(159,170,195);   white mode color */
+    background-color: #09122C;   /* dark mode color */
+    height: 68px;
+ }
+
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cityName{
+    width: 249px;
+    font-size: 17px;
+    margin-left: 479px;
+    margin-top: 11px;
+}
+
+.div3{
+   margin-right: -15px;
+    font-size: 36px;
+    margin-left: -2px;
+    margin-top: 6px;
+    
+}
+
+.div4{
+   margin-right: 105px;
+    font-size: 20px;
+    margin-left: 131px;
+    margin-top: 11px;
+}
+
+.div5{
+     margin-right: -63px;
+    font-size: 20px;
+    margin-left: -55px;
+    margin-top: 13px;
+}
+
+#btn{
+    width: 107px;
+    margin-top: 11px;
+   /* color: black;   white mode color */
+    color: white;   /* dark mode color */
+}
+
+.card-body{
+   /* background-color: rgb(188,211,212);  white mode color */
+    background-color: #393053;           /* dark mode color */
+    color:#FAF1E6;                       /* dark mode text color*/
+}
+
+#box1{
+    font-size: 20px;
+}
+
+#box2{
+    font-size: 20px;
+}
+
+#box3{
+    font-size: 20px;
+}
+
+.firstul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 200px;
+}
+
+.card-header{
+    height: 60px;
+    padding-top: 15px;
+    border-radius: 60px;
+  /*  background-color: rgb(129,127,160);  white theme color */
+   background-color: #18122B;     /* dark theme color */
+}
+
+ #bluee{
+    color:#FAF6E9;
+}
+
+ .home{
+   color:#FAF6E9; 
+}
+
+.my-0{
+
+    color : #57B4BA;
+}
+
+#bttnn{
+    cursor: pointer;
+    border-radius: 15px;
+    width: 130px;
+    height: 38px;
+
+    position: relative;
+  overflow: hidden;
+  transition: all 0.02s;
+  font-weight: bold;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+#bttnn:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
+}
+
+#bttnn:active {
+  transform: scale(0.97);
+}
+
+#bttnn.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

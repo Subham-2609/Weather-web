@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+
+   <!-- navbar -->
+
+<nav id="naavv">
+  <div class="div1">
+    <div class="div2">
+      <div class="div3">
+        <a class="navbar-brand blue" id="bluee" href="#">BlueSkies</a>
+      </div>
+      <div class="div4">
+        <a class="navbar-brand home" id="house" href="#">Home</a>
+      </div>
+      <div class="div5">
+        <!-- <a class="navbar-brand theme" href="#">Theme</a> -->
+        <button class="navbar-brand theme" id="bttnn" onclick="btnnnn()">White Mode</button>
+
+      </div>
+    
+    </div>
+
+    <!-- //search  -->
+    <input class="form-control me-2" id="cityName" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-success" id="btn" type="submit" onclick="fetchWeather()">Search</button>
+
+    </div>
+</nav>
+
+<main>
+    <!-- first box -->
+<div class="container123">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+         <div class="col">
+             <div class="card mb-4 rounded-3 shadow-sm"> 
+                <div class="card-header py-3">
+                     <h4 class="my-0 fw-normal"><b>Location</b></h4> 
+                    </div>
+    <div class="card-body" id="card1">
+         <ul class="list-unstyled mt-3 mb-4" id="box1">
+             <li>City Name : <span id="city_name"></span></li> 
+             <li>State : <span id="state"></span></li> 
+             <li>Country : <span id="countryy"></span></li>
+              <li>Local time : <span id="local_time"></span></li> 
+              <li>Time Zone : <span id="time_zone"></span></li> 
+            </ul>
+            </div> 
+        </div>
+     </div> 
+
+     <!-- second box -->
+
+     <div class="col">
+         <div class="card mb-4 rounded-3 shadow-sm"> 
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal"><b>Atmospheric Conditions</b></h4>
+             </div> 
+             <div class="card-body">
+                  <ul class="list-unstyled mt-3 mb-4" id="box2">
+                     <li>Temperature : <span id="temp"></span></li> 
+                     <!-- <li>Feels like <span id="degreee"></span></li>  -->
+                     <li><b><i>Feels like <span id="degreee"></span></i></b></li> 
+
+                     <li>Status : <b><i><span id="statuss"></span></li></b></i>
+                     <li>Humidity : <span id="humidity"></span></li>
+                      <li>Heat Index : <span id="heat"></span></li>
+                  </ul>
+                     </div>
+                     </div>
+                          </div>
+                    
+
+                    <!-- third box -->
+
+
+                    <div class="col">
+                         <div class="card mb-4 rounded-3 shadow-sm">
+                             <div class="card-header">
+                                 <h4 class="my-0 fw-normal"><b>Climate Data</b></h4>
+                                 </div>
+                                  <div class="card-body"> 
+                                     <ul class="list-unstyled mt-3 mb-4" id="box3">
+                                         <li>Pressure : <span id="pressure"></span></li>
+                                          <li>Wind Speed(kph/mph) : <span id="wind_speed_kph"></span>/<span id="wind_speed_mph"></span></li>
+                                          <li>Wind direction : <span id="wind_dir"></span></li>
+                                           <li>Precipitation(inches) : <span id="precipitation_in"></span>/<span id="precipitation_mm"></span></li>
+                                           <li>UV : <span id="uv"></span></li>
+                
+                                     </ul>
+                                        </div> 
+                                    </div>
+                                 </div>
+                                 </div>
+
+</div>
+
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+     <script src="second.js"></script>
+  </body>
+</html>
