@@ -27,4 +27,4 @@ It fetches real-time weather data from the **WeatherAPI** and displays the curre
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Subham-2609/weather-web.git
+   git clone https://github.com/Subham-2609/Weather-web.git
